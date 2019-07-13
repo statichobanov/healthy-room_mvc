@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pine dust</title>
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/body.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/slot.css" />
+    <link rel="stylesheet" href="/styles/join-us.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    
+    <form id="join-us-form" class="join-us-form" action="#" method="post" style="display: none">
+        <div>
+            <p style="color:black;">First name:</p>
+            <input type="text" name="firstName" placeholder="Your name here">
+        </div>
+        <div>
+            <p style="color:black;">Email:</p>
+            <input type="text" name="email" placeholder="Your email here">
+        </div>
+        
+        <input type="submit" value="Submit">
+    </form>
+    
+    <div class="header-wrapper">
+
+        <div class="logo-navbar-container">
+            <div class="logo">
+               <p class="logo-name">HealthyRoom</p>
+               <img class="logo-img" src="" alt="">
+            </div>
+            
+            <div class="navbar">
+                <li class="nav-options about-us"><a href="/aboutus">за нас</a></li>
+                <li class="nav-options"><a href="#">полезно</a></li>
+                <li class="nav-options partnership"><a href="/partnership">партньорство</a></li>
+                <li class="nav-options products"><a href="/products">продукти</a></li>
+                <li class="nav-options"><a href="#">контакти</a></li>
+            </div>
+        </div>
+
+        <div class="social-media">
+           <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a> 
+           <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> 
+        </div>
+    </div>
+
+    <div class="background-image">
+        <img src="/images/background_17.jpg" alt="#">
+    </div>
+
+    <div class="slot">
+        <div>
+            <h3>Rebuilding a brighter future</h3>
+            <p>join in our community</p>
+            <a id="join-us-btn" href="#">join us</a>
+        </div>
+    </div>
+
+    <div class="main-wrapper">
+        
+        <%- body %>
+        
+    </div>
+    
+    <script src="/scripts/header.js"></script>
+    <script src="/scripts/serverCalls.js"></script>
+</body>
+</html>

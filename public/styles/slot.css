@@ -1,0 +1,38 @@
+.slot {
+  display: flex;
+  justify-content: center;
+  height: 300px; }
+  .slot .join-us {
+    overflow: hidden;
+    animation: join-us 2s ease-out;
+    display: flex;
+    flex-direction: column; }
+    .slot .join-us h3 {
+      line-height: 50px;
+      font-size: 40px;
+      font-weight: 800;
+      text-align: center; }
+    .slot .join-us p {
+      text-align: center;
+      line-height: 20px;
+      font-size: 20px;
+      font-family: inherit;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .slot .join-us a {
+      align-self: center;
+      padding: 8px 25px;
+      text-transform: uppercase;
+      background-color: #2ed06d;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: inherit; }
+      .slot .join-us a:hover, .slot .join-us a:active {
+        background-color: green; }
+
+@keyframes join-us {
+  0% {
+    transform: translateY(40%); }
+  100% {
+    transform: translateY(0%); } }
