@@ -21,47 +21,33 @@
 </head>
 
 <body>
-    
-    <form id="join-us-form" class="join-us-form" action="#" method="post" style="display: none">
-        <div>
-            <p style="color:black;">First name:</p>
-            <input type="text" name="firstName" placeholder="Your name here">
-        </div>
-        <div>
-            <p style="color:black;">Email:</p>
-            <input type="text" name="email" placeholder="Your email here">
+
+    <% include ../partials/join-now-form %>
+
+    <div class="header-wrapper">
+        <div class="logo">
+           <p class="logo-name">HealthyRoom</p>
+           <img class="logo-img" src="" alt="">
         </div>
         
-        <input type="submit" value="Submit">
-    </form>
-    
-    <div class="header-wrapper">
-
-        <div class="logo-navbar-container">
-            <div class="logo">
-               <p class="logo-name">HealthyRoom</p>
-               <img class="logo-img" src="" alt="">
-            </div>
-            
-            <div class="navbar">
-                <li class="nav-options about-us"><a href="/aboutus">за нас</a></li>
-                <li class="nav-options"><a href="#">полезно</a></li>
-                <li class="nav-options partnership"><a href="/partnership">партньорство</a></li>
-                <li class="nav-options products"><a href="/products">продукти</a></li>
-                <li class="nav-options"><a href="#">контакти</a></li>
-            </div>
+        <div class="navbar">
+            <li class="nav-options about-us"><a href="/aboutus">за нас</a></li>
+            <li class="nav-options"><a href="#">полезно</a></li>
+            <li class="nav-options partnership"><a href="/partnership">партньорство</a></li>
+            <li class="nav-options products"><a href="/products">продукти</a></li>
+            <li class="nav-options"><a href="#">контакти</a></li>
         </div>
-
+       
         <div class="social-media">
            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a> 
            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> 
         </div>
     </div>
-
+    <div class="resizer" style="display: none"></div>
     <div class="background-image">
         <img src="/images/background_17.jpg" alt="#">
     </div>
-
+    
     <div class="slot">
         <div>
             <h3>Rebuilding a brighter future</h3>
@@ -69,8 +55,9 @@
             <a id="join-us-btn" href="#">join us</a>
         </div>
     </div>
-
+    
     <div class="main-wrapper">
+        
         
         <%- body %>
         

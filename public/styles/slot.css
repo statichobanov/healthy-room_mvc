@@ -1,7 +1,7 @@
 .slot {
   display: flex;
   justify-content: center;
-  height: 300px; }
+  height: 550px; }
   .slot .join-us {
     overflow: hidden;
     animation: join-us 2s ease-out;

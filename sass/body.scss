@@ -6,17 +6,19 @@ body {
     line-height: 30px;
     color: #ffffff;
     position: relative;
+
     .background-image {
         position: absolute;
         left: 0px;
         top: 0px;
         overflow: hidden;
-        height: 400px;
+        height: 550px;
         z-index: -100;
 
         img {
             width:100vw;
-            height:100vh;
+            max-width: 100%;
+            height: auto;
             opacity: .8;
             filter: alpha(opacity=70);
         }

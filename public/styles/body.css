@@ -11,10 +11,11 @@ body {
     left: 0px;
     top: 0px;
     overflow: hidden;
-    height: 400px;
+    height: 550px;
     z-index: -100; }
     body .background-image img {
       width: 100vw;
-      height: 100vh;
+      max-width: 100%;
+      height: auto;
       opacity: .8;
       filter: alpha(opacity=70); }
