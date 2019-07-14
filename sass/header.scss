@@ -1,16 +1,16 @@
 .header-wrapper {
-    font-family: 'Whitney A','Whitney B',sans-serif;
+    font-family: 'Whitney A', 'Whitney B', sans-serif;
     font-style: normal;
     font-weight: 700;
     height: 100px;
     display: flex;
     justify-content: space-between;
     color: #fff;
-    -webkit-box-shadow: inset 0px -16px 15px -18px rgba(0,0,0,0.46);
-    -moz-box-shadow: inset 0px -16px 15px -18px rgba(0,0,0,0.46);
-    box-shadow: inset 0px -16px 15px -18px rgba(0,0,0,0.46);
+    -webkit-box-shadow: inset 0px -16px 15px -18px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: inset 0px -16px 15px -18px rgba(0, 0, 0, 0.46);
+    box-shadow: inset 0px -16px 15px -18px rgba(0, 0, 0, 0.46);
     padding: 0 50px;
-   
+
     &.fixed-header {
         position: fixed;
         top: 0;
@@ -29,12 +29,10 @@
         margin-right: 30px;
         padding: 0 30px;
         align-self: center;
-        .logo-name {
 
-        }
-        .logo-img {
- 
-        }
+        .logo-name {}
+
+        .logo-img {}
     }
 
     .navbar {
@@ -48,7 +46,7 @@
             list-style: none;
             display: inline-block;
             margin-right: 60px;
-            
+
             a {
                 letter-spacing: -1px;
                 color: inherit;
@@ -68,11 +66,11 @@
                     color: rgb(235, 247, 72);
                     border-bottom: 2px solid rgb(235, 247, 72);
                 }
-    
+
             }
         }
     }
-    
+
     .social-media {
         display: flex;
         justify-content: space-between;
@@ -81,14 +79,10 @@
         i {
             font-size: 35px;
             margin-right: 20px;
-            
-            &.fa-facebook {
-                
-            }
 
-            &.fa-instagram {
-                
-            }
+            &.fa-facebook {}
+
+            &.fa-instagram {}
         }
     }
 
@@ -96,5 +90,4 @@
 
 .resizer {
     height: 100px;
-
 }

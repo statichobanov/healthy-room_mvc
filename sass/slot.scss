@@ -3,6 +3,10 @@
     justify-content: center;
     height: 550px;
 
+    &.transperent {
+        opacity: 0;
+    }
+
     .join-us {
         overflow: hidden;
         animation: join-us 2s ease-out;

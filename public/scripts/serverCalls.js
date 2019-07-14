@@ -1,43 +1,8 @@
-function get(url) {
-    return $.ajax({
-      url,
-      method: 'GET',
-      data: {},
-    });
-}
-
-function postJson(url, data) {
-    return $.ajax({
-        url,
-        method: 'POST',
-        data: data,
-    });
-}
-
-function postForm(url, formselector) {
-    return $.ajax({
-        url,
-        method: 'POST',
-        data: $(formselector).serialize()
-    });
-}
-
-$('.about-us').on('click', (e) => {
+$(document).on('click', '.about-us, .partnership, .products', (e) => {
     e.preventDefault();
+    const url =  $(e.target).attr('href');
 
-    get('/aboutus')
-    .done((response) => {
-        $('.main-wrapper').html(response);
-    })
-    .fail((error) => {
-
-    });
-});
-
-$('.partnership').on('click', (e) => {
-    e.preventDefault();
-
-    get('/partnership')
+    get(url)
     .done((response) => {
         $('.main-wrapper').html(response);
     })
@@ -58,14 +23,40 @@ $('#join-us-form').on('submit', (e) => {
   })
 });
 
-$('.products').on('click', (e) => {
-    e.preventDefault();
-
-    get('/products')
-    .done((response) => {
-        $('.main-wrapper').html(response);
-    })
-    .fail((error) => {
-        console.log(error);
+/**
+ * 
+ * @param {String} url server url
+ */
+function get(url) {
+    return $.ajax({
+      url,
+      method: 'GET',
+      data: {},
     });
-});
+}
+
+/**
+ * 
+ * @param {String} url server url
+ * @param {Object} data data to be send to server
+ */
+function postJson(url, data) {
+    return $.ajax({
+        url,
+        method: 'POST',
+        data: data,
+    });
+}
+
+/**
+ * 
+ * @param {String} url server url
+ * @param {String} formselector 
+ */
+function postForm(url, formselector) {
+    return $.ajax({
+        url,
+        method: 'POST',
+        data: $(formselector).serialize()
+    });
+}
