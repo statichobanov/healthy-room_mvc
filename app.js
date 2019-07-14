@@ -28,4 +28,3 @@ database.connectToServer((err) => {
         console.log('\n' + `Express server listening on port ${app.get('port')}`);
     });
 })
-

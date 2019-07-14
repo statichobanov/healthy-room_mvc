@@ -7,12 +7,13 @@ $(window).on("load", () => {
 $(document).on('scroll', () => {
     if ($(window).scrollTop() >= $('.header-wrapper').height()/2) {
         $('.header-wrapper').addClass('fixed-header');
-        $('.resizer').addClass('hidden'); // empty div under header resizing the fixed header
+        $('.resizer').removeClass('hidden'); // empty div under header resizing the fixed header
     }
     else {
         $('.header-wrapper').removeClass('fixed-header');
-        $('.resizer').removeClass('hidden'); 
+        $('.resizer').addClass('hidden'); 
     }
 }).on('click', '#join-us-btn', () => {
-    $('#join-us-form')
+    $('#join-us-form').fadeIn();
+    
 });
