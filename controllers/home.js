@@ -7,7 +7,7 @@ module.exports = (req, res) => {
         if (err) { console.log(err) };
 
         res.render('home',{
-            subscribers
+            subscribers: subscribers
         });
     });
 }
