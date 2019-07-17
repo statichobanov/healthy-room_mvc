@@ -20,12 +20,12 @@ module.exports = (req, res) => {
         if (error) {
             res.send({
                 error:error 
-            })
+            });
         } else {
             res.send({
                 success: true,
                 message: resources.nodeMailerSucessMsg
-            })
+            });
         }
     });
 }
