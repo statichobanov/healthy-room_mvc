@@ -19,7 +19,6 @@ app.get('/partnership', controllers.partnership.partnership);
 app.post('/partnership/member', controllers.partnership.postNewMember);
 app.post('/joinus', controllers.joinUs);
 app.get('/products', controllers.pdp);
-//app.get('**/admins', (req, res) => {res.json({'kur':'kur'})})
 
 database.connectToServer((err) => {
     if (err) console.log('Error connecting with the Database'); 
