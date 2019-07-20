@@ -1,7 +1,3 @@
-function partnership (req, res) {
+module.exports = (req, res) => {
     res.render('partnership', {layout: false});
-}
-
-module.exports = {
-    partnership: partnership,
 }

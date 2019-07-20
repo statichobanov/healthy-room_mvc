@@ -15,8 +15,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', controllers.home);
 app.get('/aboutus', controllers.aboutUs);
-app.get('/partnership', controllers.partnership.partnership);
-app.post('/partnership/member', controllers.partnership.postNewMember);
+app.get('/partnership', controllers.partnership);
 app.post('/joinus', controllers.joinUs);
 app.get('/products', controllers.pdp);
 
