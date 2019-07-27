@@ -14,8 +14,9 @@ function headerEvents () {
             $('.resizer').addClass('hidden'); 
         }
     }).on('click', '#join-us-btn', () => {
-        $('#join-us-form').fadeIn();
-        
+        $('.form-container').fadeIn();
+    }).on('click', '.close', () => {
+        $('.form-container').fadeOut();
     });
 }
 
