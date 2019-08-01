@@ -10,17 +10,19 @@
     -moz-box-shadow: inset 0px -16px 15px -18px rgba(0, 0, 0, 0.46);
     box-shadow: inset 0px -16px 15px -18px rgba(0, 0, 0, 0.46);
     padding: 0 50px;
+    background: #AF9204;
 
     &.fixed-header {
         position: fixed;
         top: 0;
         left: 0;
         width: 93.4%;
-        background: #333333;
+        background: #AF9204;
+        z-index: 10;
     }
 
     &:hover {
-        background: #333333;
+        background: #AF9204;
         color: rgb(240, 239, 239);
     }
 
@@ -63,8 +65,8 @@
                 padding-right: 1px;
 
                 &:hover {
-                    color: rgb(235, 247, 72);
-                    border-bottom: 2px solid rgb(235, 247, 72);
+                    color: #02070D;
+                    border-bottom: 2px solid #02070D;
                 }
 
             }

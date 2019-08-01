@@ -1,7 +1,9 @@
 .slot {
     display: flex;
     justify-content: center;
-    height: 550px;
+    height: auto;
+    position: relative;
+    bottom: 500px;
 
     &.transperent {
         opacity: 0;
